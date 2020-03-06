@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "stream_server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "coffee server.coffee"
   },
   "dependencies": {
     "ejs": "2.5.x",
@@ -14,5 +14,8 @@
   },
   "engines": {
     "node": ">= 6.0.0"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.5.1"
   }
 }

@@ -214,6 +214,7 @@ api =
     session = {}
     origParams = []
     currentMedia = null
+
     for line in str.split /\r?\n/
       if line isnt ''
         if (match = /^(.*?)=(.*)$/.exec line)?
@@ -228,6 +229,8 @@ api =
         switch key
           when 'v'  # Version
             session.version = value
+          when 'i'  # Version
+            session.title = value
           when 'o'  # Origin
             params = value.split /\s+/
             if params.length > 6

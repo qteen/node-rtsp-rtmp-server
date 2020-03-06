@@ -6,7 +6,7 @@ module.exports =
   ############################
 
   # Server listen port
-  serverPort: 80
+  serverPort: 5553
 
   # RTMP server listen port
   rtmpServerPort: 1935
@@ -14,7 +14,7 @@ module.exports =
   # Server name which will be embedded in
   # RTSP and HTTP response headers.
   # Default server name is used when this value is null.
-  serverName: 'node-rtsp-rtmp-server'
+  serverName: 'Infoglobal RTSP-RTMP Server'
 
   # Average frame rate of video (informative)
   videoFrameRate: 30
@@ -145,7 +145,7 @@ module.exports =
 
   # If true, H.264 access unit delimiter NAL units are
   # not sent to clients
-  dropH264AccessUnitDelimiter: true
+  dropH264AccessUnitDelimiter: false
 
   debug:
     # If true, all incoming data are ignored
